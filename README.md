@@ -23,7 +23,7 @@ Have a good one!
 
 ## The URL
 ```
-[https://raw.githack.com/stub2k2/<your-repository-name>/<branch>/index.html](https://raw.githack.com/stub2k2/SimpleClockWithDateForScreenSaver/main/index.html)
+https://raw.githack.com/stub2k2/<your-repository-name>/<branch>/index.html
 ```
 In this repos case:
 
