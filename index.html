@@ -58,9 +58,6 @@
     <script>
         function updateTime() {
             const now = new Date();
-            const hours = String(now.getHours()).padStart(2, '0');
-            const minutes = String(now.getMinutes()).padStart(2, '0');
-            const seconds = String(now.getSeconds()).padStart(2, '0');
             
             //// Croatian
             //const days = ['Nedjelja', 'Ponedjeljak', 'Utorak', 'Srijeda', 'Četvrtak', 'Petak', 'Subota'];
@@ -91,9 +88,10 @@
             //// Greek
             // const days = ['Κυριακή', 'Δευτέρα', 'Τρίτη', 'Τετάρτη', 'Πέμπτη', 'Παρασκευή', 'Σάββατο'];
             const day = days[now.getDay()];
+            const time = now.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true });
             const date = now.toLocaleDateString('en-us');
 
-            document.getElementById('clock').textContent = time.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true })
+            document.getElementById('clock').textContent = '${time}';
             document.getElementById('date').textContent = `${day}, ${date}`;
         }
 
