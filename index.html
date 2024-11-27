@@ -88,7 +88,7 @@
             //// Greek
             // const days = ['Κυριακή', 'Δευτέρα', 'Τρίτη', 'Τετάρτη', 'Πέμπτη', 'Παρασκευή', 'Σάββατο'];
             
-            var time = now.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', seconds: 'numeric', hour12: true });
+            var time = now.toLocaleTimeString('en-US');
             var day = days[now.getDay()];
             var date = now.toLocaleDateString('en-us');
 
